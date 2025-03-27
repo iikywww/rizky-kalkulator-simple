@@ -1,0 +1,88 @@
+/* ====== GENERAL STYLE ====== */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #0b0d73;
+    color: white;
+}
+
+/* ====== KALKULATOR ====== */
+.calculator {
+    background-color: #2c2c2c;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+}
+
+/* ====== DISPLAY ====== */
+.calculator #display {
+    width: 100%;
+    padding: 15px;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: right;
+    background-color: #444444;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+/* ====== GRID LAYOUT TOMBOL ====== */
+.calculator .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* ====== STYLE TOMBOL ====== */
+.calculator .buttons button {
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #182a5c;
+    color: white;
+    border-radius: 50%; /* Membuat tombol bulat */
+    transition: 0.3s;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover efek untuk tombol */
+.calculator .buttons button:hover {
+    background-color: #323ff8;
+}
+
+/* ====== WARNA KHUSUS ====== */
+.operator {
+    background-color: #ff9800;
+}
+
+.operator:hover {
+    background-color: #e68900;
+}
+
+.clear {
+    background-color: #ff4c4c;
+}
+
+.clear:hover {
+    background-color: #d43f3f;
+}
+
+.equal {
+    background-color: #4caf50;
+    grid-column: span 4; /* Tombol "=" membentang sepanjang grid */
+    border-radius: 10px; /* Tombol "=" berbentuk panjang */
+}
+
+.equal:hover {
+    background-color: #3d8b40;
+}
